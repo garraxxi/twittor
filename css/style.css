@@ -11,6 +11,15 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+
+    /* evita que al hacer scroll hacia abajo, se refresque el aplicativo en android */
+    overscroll-behavior-y: contain; 
+    /* evita seleccionar en iOS */
+    -webkit-user-select: none;
+    /* evita resaltado autoático en iOS */
+    -webkit-tap-highlight-color: transparent;
+    /* evita que se levante la ventana emergente en click sostenido en iOS */
+    -webkit-touch-callout: none;
 }
 
 /* Personalizados */
